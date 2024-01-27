@@ -1,9 +1,13 @@
 
 const Home = () => {
     return (
-        <div>
-            <h1>This is Home Page</h1>
-        </div>
+        <section className="pt-6 pb-20 max-w-7xl mx-auto">
+            {/* category btn and search */}
+            <div>
+                <div>btn</div>
+                <div>Search</div>
+            </div>
+        </section>
     );
 };
 
