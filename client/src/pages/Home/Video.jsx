@@ -15,8 +15,12 @@ const Video = () => {
                 <img src="https://randomuser.me/api/portraits/men/57.jpg" alt="avatar" className="rounded-full h-8 w-8 shrink-0" />
                 <div>
                     <Link to={`/videos/1`}>
-                        <p>Video Title</p>
+                        <p className="text-slate-900 text-sm font-semibold">Video Title</p>
                     </Link>
+                    <div className="flex gap-2">
+                        <span className="text-gray-400 text-xs hover:text-gray-600">Andy Houng</span>
+                        <span className="text-gray-400 text-xs hover:text-gray-600">150k views  <i className='text-green-600 bx bx-signal-4'></i> 15 January 2024</span>
+                    </div>
                 </div>
             </div>
         </div>
