@@ -11,7 +11,7 @@ const Home = () => {
     return (
         <section className="pt-6 pb-10 max-w-7xl mx-auto">
             {/* category btn and search */}
-            <div className="flex flex-col md:flex-row justify-between items-center mt-2 mb-5 gap-4 px-0 md:px-2 lg:px-0">
+            <div className="flex flex-col md:flex-row justify-between items-center mt-2 mb-5 gap-4 px-0 md:px-5 lg:px-0">
                 {/* category */}
                 <div className="flex gap-2">
                     <button className="bg-blue-100 text-blue-600 px-4 py-1 rounded-full cursor-pointer">All</button>

@@ -7,7 +7,7 @@ const Video = ({video}) => {
     const {title, author, date, duration, views, thumbnail} = video;
 
     return (
-        <div>
+        <div className="mb-5">
             {/* thumnail */}
             <div className="relative">
                 <Link to={`/videos/1`}>
