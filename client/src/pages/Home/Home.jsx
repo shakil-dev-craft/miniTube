@@ -1,7 +1,13 @@
 import Search from "../../components/Search";
+import { useGetVideosQuery } from "../../features/api/apiSlice";
 import Video from "./Video";
 
 const Home = () => {
+    const {data: videos, isLoading, isError} = useGetVideosQuery();
+    console.log(videos || {});
+    console.log(isLoading);
+    console.log(isError);
+
     return (
         <section className="pt-6 pb-10 max-w-7xl mx-auto">
             {/* category btn and search */}
@@ -18,7 +24,11 @@ const Home = () => {
             </div>
             {/* videos grid */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 lg:px-0 px-5 min-h-[220px] md:min-h-[300px]">
-                <Video />
+                {
+                    videos?.length > 0 ? (videos?.map((video, index) => <Video key={videos?.id || index} video={video} />)) 
+                    : 
+                    (<div>No Videos found!</div>)
+                }
             </div>
         </section>
     );
